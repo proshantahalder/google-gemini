@@ -1,0 +1,53 @@
+Method : POST
+
+https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCQJoGMfySOEoxEpS49DKO2vjKGSJ3GDxQ
+
+
+Request: 
+
+{
+contents: [{ parts: [{ text: "do you understand bangla?" }] }]
+}
+
+
+Response:
+
+{
+    "candidates": [
+        {
+            "content": {
+                "parts": [
+                    {
+                        "text": "হ্যাঁ, আমি বাংলা বুঝি। আমি একটি বহুভাষিক AI ভাষা মডেল এবং বাংলা সহ 100+ ভাষা বুঝতে এবং উত্তর দিতে প্রশিক্ষণপ্রাপ্ত।\n\nতবে, আমার ভাষা বোঝার সীমাবদ্ধতা আছে। আমি কেবল লিখিত পাঠ্য বুঝতে পারি এবং কথ্য ভাষা বুঝতে বা উৎপাদন করতে পারি না। এছাড়াও, আমি সাংস্কৃতিক সূক্ষ্মতা বা ভাষার প্রেক্ষাপট পুরোপুরি বুঝতে পারি না।\n\nযদি আপনার বাংলা ভাষায় কোনো প্রশ্ন থাকে, তাহলে আমি সাহায্য করার চেষ্টা করব। তবে, আমার উত্তরগুলি নিখুঁত নাও হতে পারে, এবং আপনাকে সর্বদা নির্ভরযোগ্য উত্স থেকে তথ্য যাচাই করা উচিত।"
+                    }
+                ],
+                "role": "model"
+            },
+            "finishReason": "STOP",
+            "index": 0,
+            "safetyRatings": [
+                {
+                    "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HATE_SPEECH",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_HARASSMENT",
+                    "probability": "NEGLIGIBLE"
+                },
+                {
+                    "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+                    "probability": "NEGLIGIBLE"
+                }
+            ]
+        }
+    ],
+    "usageMetadata": {
+        "promptTokenCount": 6,
+        "candidatesTokenCount": 268,
+        "totalTokenCount": 274
+    }
+}

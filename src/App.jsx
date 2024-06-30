@@ -17,7 +17,7 @@ function App() {
     });
     setAnswer(response["data"]["candidates"][0]["content"]["parts"][0]["text"]);
   }
-
+  
   return (
     <>
       <h1>Google Gemini Chat AI</h1>
